@@ -1,11 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+// Colors and fonts variables
+@import 'variables';
 
-*,*::after,*::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// Initial configuration
+@import 'reboot';
 
+// sections that contains the profile card centered in both axis.
 .main{
-    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    &__img{
+        position: absolute;
+        width: 200%;
+        height: auto;
+        &--top{
+            top:-80%;
+            left:-140%;
+        }
+        &--bottom{
+            bottom:-70%;
+            right:-140%;
+        }
+    }
 }
+
+
