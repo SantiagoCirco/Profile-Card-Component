@@ -34,3 +34,17 @@ html {
   bottom: calc(-380px + 15vw);
   right: calc(-460px + 15vw);
 }
+
+@media only screen and (min-width: 1080px) {
+  .main__img {
+    width: 800px;
+  }
+  .main__img--top {
+    top: -360px;
+    left: -260px;
+  }
+  .main__img--bottom {
+    bottom: -490px;
+    right: -260px;
+  }
+}

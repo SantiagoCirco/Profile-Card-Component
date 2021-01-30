@@ -23,3 +23,18 @@
         }
     }
 }
+
+
+@media only screen and (min-width:1080px){
+    .main__img{
+        width:800px;
+        &--top{
+            top: -360px;
+            left: -260px;
+        }
+        &--bottom{
+            bottom: -490px ;
+            right:  -260px ;
+        }
+    }
+}
