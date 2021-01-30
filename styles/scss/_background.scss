@@ -1,0 +1,25 @@
+
+
+// sections that contains the profile card centered in both axis.
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    &__img{
+        position: absolute;
+        width: 600px;
+        // The position change for responsivnes from mobile to tablet with the "calc()" function
+        &--top{
+            top:calc(-400px + 15vw);
+            left:calc(-460px + 15vw);
+        }
+        &--bottom{
+            bottom:calc(-380px + 15vw);
+            right:calc(-460px + 15vw);
+        }
+    }
+}

@@ -22,16 +22,15 @@ html {
 
 .main__img {
   position: absolute;
-  width: 200%;
-  height: auto;
+  width: 600px;
 }
 
 .main__img--top {
-  top: -80%;
-  left: -140%;
+  top: calc(-400px + 15vw);
+  left: calc(-460px + 15vw);
 }
 
 .main__img--bottom {
-  bottom: -70%;
-  right: -140%;
+  bottom: calc(-380px + 15vw);
+  right: calc(-460px + 15vw);
 }
