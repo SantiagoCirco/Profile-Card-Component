@@ -9,9 +9,11 @@
     background-color: $color-primary;
     position: relative;
     overflow: hidden;
+    z-index: -2;
     &__img{
         position: absolute;
         width: 600px;
+        z-index: -1;
         // The position change for responsivnes from mobile to tablet with the "calc()" function
         &--top{
             top:calc(-400px + 15vw);
@@ -34,6 +36,20 @@
         }
         &--bottom{
             bottom: -490px ;
+            right:  -260px ;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .main__img{
+        width:1000px;
+        &--top{
+            top: -550px;
+            left: -350px;
+        }
+        &--bottom{
+            bottom: -700px ;
             right:  -260px ;
         }
     }

@@ -14,17 +14,19 @@
 <body>
   
   <section class="main">
-    <img src="images/bg-pattern-top.svg" alt="background circle" class="main__img main__img--top">
-    <img src="images/bg-pattern-bottom.svg" alt="background circle" class="main__img main__img--bottom">
     <div class="card">
-      <div class="card__header-background"></div>
-      <div class="card__img-container">
-        <img src="images/image-victor.jpg" alt="profile picture" class="card__img">
+      <!-- background image -->
+      <div class="card__header-bg"></div>
+      <!-- profile picture with circular borders -->
+      <div class="card__header">
+        <div class="card__img-container">
+          <img src="images/image-victor.jpg" alt="profile picture" class="card__img">
+        </div>
+        <!-- User's name and location -->
+        <h1 class="card__name">Victor Crest <span class="card__age">26</span></h1>
+        <h3 class="card__location">London</h3>
       </div>
-    
-      <h1 class="card__name">Victor Crest <span class="card__age">26</span></h1>
-      <h3 class="card__location">London</h3>
-    
+      <!-- User's statistics ( followers, likes and posts) -->
       <div class="card__stats">
         <div class="stats__followers">
           <p class="stats__amount">80K</p>
@@ -40,6 +42,9 @@
         </div>
       </div>
     </div>
+    <!-- Main background circles -->
+    <img src="images/bg-pattern-top.svg" alt="background circle" class="main__img main__img--top">
+    <img src="images/bg-pattern-bottom.svg" alt="background circle" class="main__img main__img--bottom">
   </section>
 
   <div class="attribution">
