@@ -1,0 +1,40 @@
+
+
+.attribution{
+    min-height: 12vh;
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    letter-spacing: .1em;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    line-height: 3;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    &__link{
+        color: white;
+        border-radius: 2px;
+        padding: .2em 1em;
+    }
+}
+
+
+@media only screen and (min-width:768px){
+    .attribution{
+        font-size: 1.2rem;
+        text-align: center;
+        display: flex;
+        line-height: 1.7;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 400;
+        &__link{
+            padding: 0;
+        }
+        &__text{
+            margin: 0 20px;
+        }
+    }
+}

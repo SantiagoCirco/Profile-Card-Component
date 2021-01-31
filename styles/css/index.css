@@ -138,3 +138,42 @@ html {
   font-weight: bold;
   color: #2d3248;
 }
+
+.attribution {
+  min-height: 12vh;
+  width: 100%;
+  background-color: darkslategray;
+  color: white;
+  letter-spacing: .1em;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  line-height: 3;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.attribution__link {
+  color: white;
+  border-radius: 2px;
+  padding: .2em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .attribution {
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    line-height: 1.7;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+  }
+  .attribution__link {
+    padding: 0;
+  }
+  .attribution__text {
+    margin: 0 20px;
+  }
+}
